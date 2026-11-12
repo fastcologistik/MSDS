@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/msds.css">
+    <title>MSDS Chemical</title>
+</head>
+<header>
+    <section id="headerKiri">
+        <img src="" alt="">
+        <div class="teks"></div>
+    </section>
+    <section id="headerKanan">
+        <button id="kontakDarurat">Kontak Darurat 24 Jam</button>
+    </section>
+</header>
+<body>
+    <!-- HERO -->
+     <section id="hero">
+        <div class="title"></div>
+        <!-- Search Bar -->
+        <input type="text" id="inputCari" placeholder="Cari nama chemical...">
+        
+        <!-- Tombol Filter -->
+        <div id="filterBtn">
+            <button onclick="filterKategori('semua')">Semua</button>
+            <button onclick="filterKategori('keras')">Keras</button>
+            <button onclick="filterKategori('sedang')">Sedang</button>
+            <button onclick="filterKategori('ringan')">Ringan</button>
+        </div>
+     </section>
+     <!-- Wadah Kartu Produk -->
+        <div id="wadahProduk"></div>
+
+    <!-- CTA button home -->
+    <section id="buttonHome" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <img class="CTAButtonHome" src="../assets/upbutton.png" alt="Ke Atas">
+    </section>
+</body>
+    <script src="../js/msds.js"></script>
+</html>
