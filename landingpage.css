@@ -1,0 +1,111 @@
+@import url('format.css');
+
+@media (max-width: 767px){
+    /* CATATAN: Hindari memberi 'width: 100%' pada selektor bintang (*) karena bisa merusak layout grid/flex */
+    * {
+        padding: 0; 
+        margin: 0; 
+        box-sizing: border-box;   
+        font-family: "Xmind", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal; 
+    }
+    #buttonMenu{
+        position: absolute; top: 10px; right: 10px; width: 100px; height: 30px; border: none; border-radius: var(--border-utama); font-weight: bold; font-size: 14px; background-color: transparent; box-shadow: 2px 2px 10px black; backdrop-filter: blur(10px);
+    }
+    .containerMenu{
+        display: flex; flex-direction: column; gap: 10px; position: absolute; width: 300px; border: none; border-radius: var(--border-utama); top: 70px; padding: 10px; left: 30px; box-shadow: 2px 2px 10px var(--bg-kedua); backdrop-filter: blur(8px); height: 10px; overflow: hidden; opacity: 0; transition: all 0.3s ease-in-out;
+    }
+    .containerMenu.active{
+        height: 300px; overflow: auto; opacity: 1;
+    }
+    .msds,.dilusi,.tentang{
+        padding: 30px 0px; border: none; border-radius: var(--border-kedua); background: linear-gradient(300deg, var(--bg-utama), var(--bg-ketiga)); color: var(--bg-kedua); font-weight: bold; font-size: large; width: 100%;
+    }
+    .hero {
+        display: flex; 
+        flex-direction: column; 
+        gap: 20px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+        padding: 40px; 
+        margin: 0;
+    }
+
+    .hero a {
+        background-color: var(--bg-ketiga); 
+        padding: 20px; 
+        border-radius: var(--border-utama);
+    }
+
+    #containerKategori {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 30px;
+    }
+
+    #containerKategori h2 {
+        border-left: solid 5px black; 
+        padding: 5px;
+    }
+
+    #kategoriBahanKimia {
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+        gap: 20px; 
+        width: 100%; /* Diubah dari auto supaya gridnya pas */
+    } /* <-- KURUNG KURAWAL INI TADI KETINGGALAN */
+
+    #containerKategori > h2 {
+        padding: 5px; 
+        border-left: solid 5px;
+    }
+
+    .Flammable, .Corrosive, .Toxic, .Explosive, .Oxidizing, .Harmful, .Health, .Environmental {
+        display: flex; 
+        flex-direction: column; 
+        gap: 30px; 
+        box-shadow: 2px 2px 10px; 
+        padding: 15px; 
+        border-radius: var(--border-utama);
+    }
+
+    .site-footer {
+        background-color: #1a1a1a; 
+        color: #ffffff;
+        padding: 40px 20px 20px;
+        margin-top: 60px;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #333;
+    }
+    
+    .footer-info, .emergency-contact {
+        flex: 1;
+        min-width: 250px;
+    }
+    
+    .footer-info h3, .emergency-contact h4 {
+        margin-bottom: 10px;
+        color: #ff4d4d; 
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 14px;
+        color: #888;
+    }
+} /* <-- Penutup @media yang pas (cukup 1 buah di akhir) */

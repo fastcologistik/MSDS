@@ -1,0 +1,62 @@
+{
+    "img": "https://img.magnific.com/foto-premium/wanita-berpakaian-putih-menunjukkan-jempol-ke-atas_641503-381593.jpg",
+    "kategoriBahanKimia": {
+        "mudahterbakar": [
+            {
+                "judul": "Bahan Mudah Terbakar (Flammable)",
+                "img": "https://img.magnific.com/free-vector/probitied-fire-sign_78370-4051.jpg",
+                "penjelasan": "Bahan kimia yang mudah menyala atau bereaksi jika terpapar sumber api."
+            }
+        ],
+        "corrsive": [
+            {
+                "judul": "Bahan Korosif (Corrosive)",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/GHS-pictogram-acid.svg/250px-GHS-pictogram-acid.svg.png",
+                "penjelasan": "Bahan yang dapat merusak jaringan tubuh dan melarutkan logam."
+            }
+        ],
+        "toxic": [
+            {
+                "judul": "Bahan Beracun (Toxic)",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Skull_and_Crossbones.svg/250px-Skull_and_Crossbones.svg.png",
+                "penjelasan": "Bahan yang dapat menyebabkan keracunan berat atau kematian.",
+                "materi" : ""
+            }
+        ],
+        "Explosive": [
+            {
+                "judul": "Bahan Mudah Meledak (Explosive)",
+                "img": "https://img.magnific.com/premium-vector/adr-1-explosives-transport-sign-orange-black-sign-with-text-vector-illustration_1144834-491.jpg",
+                "penjelasan": "Bahan yang dapat meledak akibat panas atau benturan."
+            }
+        ],
+        "Oxidizing": [
+            {
+                "judul": "Bahan Pengoksidasi (Oxidizing)",
+                "img": "https://img.magnific.com/premium-vector/spontaneous-combustibles-sign-dangerous-goods-placards-class-4-perfect-transport-vehicles-backgr_1144834-490.jpg",
+                "penjelasan": "Bahan yang memicu atau memperparah kobaran api."
+            }
+        ],
+        "HarmfulIrritant": [
+            {
+                "judul": "Bahan Iritasi (Harmful / Irritant)",
+                "img": "https://img.magnific.com/premium-vector/warning-sign_97886-20317.jpg",
+                "penjelasan": "Bahan non-korosif yang menimbulkan iritasi pada kulit atau mata."
+            }
+        ],
+        "HealthHazard": [
+            {
+                "judul": "Bahaya Kesehatan Kronis (Health Hazard)",
+                "img": "https://img.magnific.com/premium-vector/health-hazard-symbol-labellonger-term-health-hazardghs-hazard-pictogram_112413-2089.jpg",
+                "penjelasan": "Bahan yang memicu dampak kesehatan jangka panjang."
+            }
+        ],
+        "EnvironmentalHazard": [
+            {
+                "judul": "Bahaya Lingkungan (Environmental Hazard)",
+                "img": "https://img.magnific.com/premium-vector/chemical-hazard-icon-dangerous-environment-substance-warning-symbol-vector-illustration-design_861234-3706.jpg",
+                "penjelasan": "Bahan yang merusak ekosistem dan organisme air."
+            }
+        ]
+    }
+}

@@ -1,17 +1,30 @@
-//header
-const [gambarLogo, teksLogo] = document.querySelectorAll("#headerKiri img, #headerKiri .teks");
+// //header
+// const [gambarLogo, teksLogo] = document.querySelectorAll("#headerKiri img, #headerKiri .teks");
 
-const title = document.querySelector('.title')
+// const title = document.querySelector('.title')
+// const hero = document.getElementById('hero');
+
+// fetch("dataMsds.json")
+// .then(response => response.json())
+// .then(data => {
+//     gambarLogo.src = data.logo;
+//     teksLogo.textContent = data.teks;
+//     hero.style.backgroundImage = `url('${data.hero.backgroundhero})`
+//     title.textContent = data.hero.hero1;
+// });
+
+const headline = document.getElementById('headline');
+const title = document.querySelector('.title');
 const hero = document.getElementById('hero');
 
 fetch("dataMsds.json")
-.then(response => response.json())
-.then(data => {
-    gambarLogo.src = data.logo;
-    teksLogo.textContent = data.teks;
-    hero.style.backgroundImage = `url('${data.hero.backgroundhero})`
-    title.textContent = data.hero.hero1;
-});
+.then(response=> response.json())
+.then(data =>{
+  headline.textContent = data.teks
+  title.textContent = data.hero.hero1
+  hero.style.backgroundImage = `url('${data.hero.backgroundhero}')`
+})
+
 
 // wadah produk
 const inputCari = document.getElementById('inputCari');
